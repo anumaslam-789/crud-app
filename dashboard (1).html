@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+
+<body style="color: aliceblue; background-color: #1d2630;">
+    <div class="container mt-6">
+                <div class="text-center">
+                   <h1 class="display-5 mb-5" > <strong>student-form</strong> </h1>
+                </div>
+<div class=" main row justify-content-center">
+                <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+
+                    <div class="col-8 md-6 mb-3">
+                        <label for="name">name</label>
+                        <input type="text" class="form-control" id ="fName" placeholder="Enter your name">
+                    </div>
+                    <div class="col-8 md-6 mb-3">
+                        <label for="name">father name</label>
+                        <input type="text" class="form-control" id="fatherName " placeholder="Enter your name">
+                    </div>
+
+                    <div class="col-8 md-6 mb-3">
+                        <label for="name">Roll num</label>
+                        <input type="text" class="form-control" id="rollNumber" placeholder="Enter your name">
+                    </div>
+                    <div class="col-8  md-6 mb-3">
+                        <label for="name">Contact number</label>
+                        <input type="text" class="form-control" id="contact " placeholder="Enter your name">
+                    </div>
+                    <div class="col-8  md-6 mb-3">
+                        <label for="name">sectionName</label>
+                        <input type="text"   class="form-control" id="sectionName " placeholder="Enter your name">
+                    </div>
+                    <div class="col-8 md-6 mb-3">
+                        <label>Class-timing </label>
+                        <input type="text"  class="form-control"  id="classTiming" placeholder="Enter your banch">
+                        <select >
+                            <option value="9-12">9am-12am</option>
+                            <option value="9-12">12pm-2pm</option>
+                            <option value="9-12">3pm-5pm</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-8 md-6 mb-3" >
+                        <label for="name">Teacher</label>
+                        <input type="text" class="form-control" id="teacherName "placeholder="Enter your teacher's Name">
+                        <select>
+                            <option value="9-12">miss kiran</option>
+                            <option value="9-12">Miss hida</option>
+                            <option value="9-12">Miss nimra</option>
+                        </select>
+                    </div>
+
+                    <div class="col-8  col md-6 mb-3" >
+                        <label for="name">course</label>
+                        <input type="text"   class="form-control" placeholder="Enter your course" id="course">
+                        <select>
+
+                            <option value="9-12">web & mubile</option>
+                            <option value="9-12">Graphic Designing</option>
+                            <option value="9-12">Ai</option>
+                        </select>
+                    </div>
+                    <div class="col-10 ">
+                        <input class="btn btn-success add btn" type="submit" value="submit">
+                        </div>
+                        </form>
+             
+            
+            <div class=" col-12 mt-5">
+             <table class= "table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>father-name</th>
+                                <th>teacher-name</th>
+                                <th>roll-number</th>
+                                <th>contact</th>
+                                <th>section-name</th>
+                                <th>Class-timing</th>
+                                <th>teacher-name</th>
+                                <th>course</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="student-list">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>fatherName</td>
+                                    <td>teacherName</td>
+                                    <td>rollNumber</td>
+                                    <td>contact</td>
+                                    <td>sectionName</td>
+                                    <td>classTiming</td>
+                                    <td>teacherName</td>
+                                    <td>course</td>
+                                    <td><a href ="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                    <a href ="#" class="btn btn-danger btn-sm delete" >Delete</a>
+                                </td>
+    
+                                </tr>
+                        </tbody>
+                            </table>
+                    </div>
+        
+</div>
+</div>
+ <script src="crud.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
