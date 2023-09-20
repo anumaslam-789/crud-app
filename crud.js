@@ -17,7 +17,7 @@ function showAlert(message, className) {
 }
 //clar all field
 function clearField() {
-    document.querySelector("#fName").value = "";
+    document.querySelector("#fname").value = "";
     document.querySelector("#classTiming").value = "";
     document.querySelector("#fatherName").value = "";
     document.querySelector("#teacherName").value = "";
@@ -29,10 +29,10 @@ function clearField() {
 }
 
 //add data
-document.getElementById("student-list").addEventListener("submit" , (e) =>{
+document.querySelector(".submitBtn").addEventListener("click" , (e) =>{
     e.preventDefault();
 
-const name = document.getElementById("fName").value;
+const name = document.getElementById("fname").value;
 const rollNumber = document.getElementById("rollNumber").value;
 const fatherName = document.getElementById("fatherName").value;
 const classTiming = document.getElementById("classTiming").value;
@@ -40,6 +40,16 @@ const teacherName = document.getElementById("teacherName").value;
 const contact =document.getElementById("contact").value;
 const course =document.getElementById("course").value;
 const sectionName = document.getElementById("sectionName").value;
+console.log(
+    name,
+    rollNumber,
+    fatherName,
+    classTiming,
+    teacherName,
+    contact,
+    course,
+    sectionName
+  );
 
    
 
@@ -54,17 +64,19 @@ const sectionName = document.getElementById("sectionName").value;
                     <td>${teacherName}</td> 
                     <td>${contact}</td>     
                     <td>${course}</td> 
-                    <td>${sectionName}</td>`
+                    <td>${sectionName}</td>`;
+
+                     constList.appendChild(row);
 
 
 });
 
 
 
-document.querySelector(".student-list").addEventListener("click", (e) => {
-    target = e.target;
-    if (target.classList.contains("delete")) {
-        target.parentElement.parentElement.remove();
-        showAlert("student Data Deleted", "danger");
-    }
-});
+// // document.querySelector(".student-list").addEventListener("click", (e) => {
+//     target = e.target;
+//     if (target.classList.contains("delete")) {
+//         target.parentElement.parentElement.remove();
+//         showAlert("student Data Deleted", "danger");
+//     }
+// });

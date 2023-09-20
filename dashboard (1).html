@@ -18,30 +18,30 @@
                 <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
 
                     <div class="col-8 md-6 mb-3">
-                        <label for="name">name</label>
-                        <input type="text" class="form-control" id ="fName" placeholder="Enter your name">
+                        <label for="fname">name</label>
+                        <input type="text" class="form-control" id ="fname" placeholder="Enter your name">
                     </div>
                     <div class="col-8 md-6 mb-3">
-                        <label for="name">father name</label>
-                        <input type="text" class="form-control" id="fatherName " placeholder="Enter your name">
+                        <label for="fatherName">father name</label>
+                        <input type="text" class="form-control" id="fatherName " placeholder="Enter your fsther's name">
                     </div>
 
                     <div class="col-8 md-6 mb-3">
-                        <label for="name">Roll num</label>
-                        <input type="text" class="form-control" id="rollNumber" placeholder="Enter your name">
+                        <label for="RollNum">Roll num</label>
+                        <input type="text" class="form-control" id="rollNumber" placeholder="Enter your roll num">
                     </div>
                     <div class="col-8  md-6 mb-3">
-                        <label for="name">Contact number</label>
-                        <input type="text" class="form-control" id="contact " placeholder="Enter your name">
+                        <label for="Contact">Contact number</label>
+                        <input type="text" class="form-control" id="contact " placeholder="Enter your contact number">
                     </div>
                     <div class="col-8  md-6 mb-3">
-                        <label for="name">sectionName</label>
-                        <input type="text"   class="form-control" id="sectionName " placeholder="Enter your name">
+                        <label for="sectionName">sectionName</label>
+                        <input type="text"   class="form-control" id="sectionName " placeholder="Enter your  sec name">
                     </div>
-                    <div class="col-8 md-6 mb-3">
-                        <label>Class-timing </label>
-                        <input type="text"  class="form-control"  id="classTiming" placeholder="Enter your banch">
-                        <select >
+                    <div style="width: 60%;">
+                        <p> Choose class-timing </p>
+                        
+                        <select id="classTiming" >
                             <option value="9-12">9am-12am</option>
                             <option value="9-12">12pm-2pm</option>
                             <option value="9-12">3pm-5pm</option>
@@ -49,28 +49,25 @@
                     </div>
 
 
-                    <div class="col-8 md-6 mb-3" >
-                        <label for="name">Teacher</label>
-                        <input type="text" class="form-control" id="teacherName "placeholder="Enter your teacher's Name">
-                        <select>
+                    <div style="width: 60%;" >
+                        <p>Teacher 's name</p>
+                        <select id="teacherName">
                             <option value="9-12">miss kiran</option>
                             <option value="9-12">Miss hida</option>
                             <option value="9-12">Miss nimra</option>
                         </select>
                     </div>
-
-                    <div class="col-8  col md-6 mb-3" >
-                        <label for="name">course</label>
-                        <input type="text"   class="form-control" placeholder="Enter your course" id="course">
-                        <select>
-
+                   
+                    <div style="width: 60%;">
+                        <p>choose course's name</p>
+                        <select id="course">
                             <option value="9-12">web & mubile</option>
                             <option value="9-12">Graphic Designing</option>
                             <option value="9-12">Ai</option>
                         </select>
                     </div>
                     <div class="col-10 ">
-                        <input class="btn btn-success add btn" type="submit" value="submit">
+                        <button type="button" class="btn btn-primary submitBtn" >submit </button>
                         </div>
                         </form>
              
